@@ -14,4 +14,4 @@ jobs:
           echo "${{ github.event.base_ref }}"
           echo "${{ github.event.commits }}"
           echo "${{ github.event.pull_request }}"
-          echo "${{ github.event.pull_request.title }}"
+          echo "${{ github.event.head_commit.message }}"
