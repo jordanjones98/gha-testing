@@ -10,4 +10,7 @@ jobs:
       - name: test
         run: |
           echo "${{ github.ref_name }}"
-          echo "${{ github.event }}"
+          echo "${{ github.event.ref }}"
+          echo "$EVENT"
+        env:
+          EVENT: ${{ github.event }}
